@@ -92,7 +92,13 @@ body {
     padding: 0px 200px;
     min-height: 200px;
     border-bottom: 2px solid black;
+
+    a{
+        text-decoration: none;
+    }
 }
+
+
 
 .footer {
     display: flex;
@@ -101,6 +107,16 @@ body {
     justify-content: space-between;
     background-color: gray;
     padding: 0px 20px 10px 20px;
+
+    div p {
+        color: white;
+    }
+
+    div a i{
+        color: white;
+        font-size: 20px;
+        margin: 1px;
+    }
 }
 
 .bg-dark {
@@ -123,6 +139,7 @@ body {
 
 .title-page{
     font-size: 50px;
+    color: rgb(255, 255, 255);
 }
 
 span{ font-family: 'Roboto', sans-serif;}
@@ -209,22 +226,76 @@ p{ font-family: 'Roboto', sans-serif;}
     align-items: center;
 }
 
+/* ***** CLIENTS *****  */
+
+.client-title{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container-logos{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
 /* ***** CONTACT ***** */
+
+.contact-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .contact-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    margin-left: 200px;
 }
 
 .contact-form{
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
+}
+
+.contact-form input{
+    margin: 5px;
+    width: 500px;
+    height: 40px;
+    background-color: #464646;
+    color: white;
+    font-size: 20px;
+
+    &::placeholder{
+        color: gray;
+        font-size: 20px;
+    }
+}
+
+.contact-form .submit{
+    width: 200px;
+    background-color: orange;
+}
+
+.contact-form textarea{
+    margin: 5px;
+    width: 500px;
+    background-color: #464646;
+    color: white;
+    font-size: 20px;
+    resize: none;
+
+    &::placeholder{
+        color: gray;
+        font-size: 20px;
+    }
 }
 
 .contact-info{
@@ -232,12 +303,29 @@ p{ font-family: 'Roboto', sans-serif;}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-bottom: 60px;
 }
 
-.contact-info-item{
+.contact-info-items{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    i{
+        font-size: 35px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        color: #464646;
+    }
+
+    p{
+        font-size: 30px;
+        color: #464646;
+    }
 }
+
+
+
+
