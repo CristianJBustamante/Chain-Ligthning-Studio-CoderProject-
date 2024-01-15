@@ -42,6 +42,7 @@ body {
 
 .txt-logo{
     font-size: 24px;
+    padding-right: 50px;
 }
 
 .nav-studio {
@@ -89,7 +90,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 200px;
+    padding: 0% 15%;
     min-height: 200px;
     border-bottom: 2px solid black;
 
@@ -138,14 +139,15 @@ body {
 
 
 .title-page{
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+    font-size: 70px;
+    color: orange;
+    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 span{ font-family: 'Roboto', sans-serif;}
 h1{ font-family: 'Roboto', sans-serif;}
 h2{ font-family: 'Roboto', sans-serif; font-size: 30px;}
-h3{ font-family: 'Roboto', sans-serif; font-size: 20px; background-color: black; color: white; margin: 0; padding: 0 10px;}
+h3{ font-family: 'Roboto', sans-serif; font-size: 20px; background-color: black; color: white; margin: 0;}
 p{ font-family: 'Roboto', sans-serif;}
 
 .w100-img{
@@ -160,7 +162,7 @@ p{ font-family: 'Roboto', sans-serif;}
     align-items: center;
     justify-content: center;
     padding: 20px 40px;
-    margin: 50px 200px;
+    margin: 50px 5%;
     min-height: 200px;
     background-color: white;
 }
@@ -238,7 +240,16 @@ p{ font-family: 'Roboto', sans-serif;}
     display: flex;
     justify-content: center;
     margin: 20px;
+
+    
 }
+
+.container-logos img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
 
 /* ***** CONTACT ***** */
 
@@ -254,7 +265,6 @@ p{ font-family: 'Roboto', sans-serif;}
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
 }
 
 .contact-form{
@@ -267,7 +277,7 @@ p{ font-family: 'Roboto', sans-serif;}
 
 .contact-form input{
     margin: 5px;
-    width: 500px;
+    width: 95%;
     height: 40px;
     background-color: #464646;
     color: white;
@@ -286,7 +296,7 @@ p{ font-family: 'Roboto', sans-serif;}
 
 .contact-form textarea{
     margin: 5px;
-    width: 500px;
+    width: 95%;
     background-color: #464646;
     color: white;
     font-size: 20px;
@@ -324,6 +334,109 @@ p{ font-family: 'Roboto', sans-serif;}
         font-size: 30px;
         color: #464646;
     }
+}
+
+
+
+/* Boostrap modifications */
+
+.fa-bars{
+    color: white;
+}
+
+div ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-btn-more-info{
+    align-items: end;
+}
+
+.btn-more-info{
+    color: whitesmoke;
+    margin-bottom: 0;
+    padding: 0 1rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/* Css Grid */
+
+
+@media (width > 768px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+}
+
+@media (500px < width < 768px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ch-one ch-two" "ch-three ch-three";
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    #ch-one{
+        grid-area: ch-one;
+    }
+
+    #ch-two{
+        grid-area: ch-two;
+    }
+
+    #ch-three{
+        grid-area: ch-three;
+    }
+}
+
+
+@media (width < 500px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+}
+
+@media (width < 800px) {
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+
+    .contact-info{
+        padding-top: 20px;
+        width: 90%;
+        align-items: center;
+    }
+    
 }
 
 

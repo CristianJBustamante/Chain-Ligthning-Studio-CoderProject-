@@ -11,29 +11,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div class="container-header bg-dark">
-            <div class="container-header-logo">
-                <a href="index.html" class="link-without-underline">
-                    <img src="../images/logo/Logo-64x64.png" alt="logo" class="img-logo">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a href="../index.html" class="link-without-underline">
+                    <img src="../images/logo/Logo-48x48.png" alt="logo" class="img-logo">
                 </a>
                 <a href="../index.html" class="link-without-underline"><span class="nav-other-item txt-logo">Chain
-                        Ligthning</span></a>
+                    Ligthning</span></a>
+                <button class="navbar-toggler btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link"><span
+                                class="nav-main-item">ABOUT</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./games.html" class="nav-link"><span
+                                class="nav-other-item">GAMES</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./clients.html" class="nav-link"><span
+                                class="nav-other-item">CLIENTS</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link"><span
+                                class="nav-other-item">CONTACT</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="container-header-nav">
-                <nav class="nav-header">
-                    <a href="./about.html" class="link-without-underline"><span class="nav-main-item">ABOUT</span></a>
-                    <a href="./games.html" class="link-without-underline"><span class="nav-other-item">GAMES</span></a>
-                    <a href="./clients.html" class="link-without-underline"><span
-                            class="nav-other-item">CLIENTS</span></a>
-                    <a href="./contact.html" class="link-without-underline"><span
-                            class="nav-other-item">CONTACT</span></a>
-                </nav>
-            </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div class="section">
@@ -50,19 +66,19 @@
                 and every game is a lightning bolt of entertainment. Get ready to unleash the power of gaming with Chain
                 Lightning!</p>
         </section>
-        <section class="section-about-info">
-            <div class="about-info-column">
+        <section id="section-about-info">
+            <div class="about-info-column" id="ch-one">
                 <img src="../images/about/Stand out.jpg" alt="img1" class="w100-img">
                 <p>At Chain Lightning, we strive to stand out in the gaming industry. Through constant innovation and
                     overflowing creativity, we create unique experiences that capture attention and shine amidst the
                     crowd.</p>
             </div>
-            <div class="about-info-column">
+            <div class="about-info-column" id="ch-two">
                 <img src="../images/about/Focus.jpg" alt="img2" class="w100-img">
                 <p>Our primary commitment lies in product quality. From conceptualization to implementation, we dedicate
                     meticulous attention to every detail. We take pride in delivering games that not only entertain.</p>
             </div>
-            <div class="about-info-column">
+            <div class="about-info-column" id="ch-three">
                 <img src="../images/about/Black box.jpg" alt="img3" class="w100-img">
                 <p>At Chain Lightning, we operate as a "black box" of creativity. While we value transparency, our true
                     magic lies in the internal process, where game development becomes a captivating mystery. Each title
@@ -95,6 +111,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 

@@ -5,37 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chain Ligthning Studio</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="./images/favicon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div class="container-header bg-dark">
-            <div class="container-header-logo">
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
                 <a href="index.html" class="link-without-underline">
-                    <img src="./images/logo/Logo-64x64.png" alt="logo" class="img-logo">
+                    <img src="./images/logo/Logo-48x48.png" alt="logo" class="img-logo">
                 </a>
                 <a href="index.html" class="link-without-underline"><span class="nav-main-item txt-logo">Chain
-                        Ligthning</span></a>
+                    Ligthning</span></a>
+                <button class="navbar-toggler btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a href="./pages/about.html" class="nav-link"><span
+                                class="nav-other-item">ABOUT</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/games.html" class="nav-link"><span
+                                class="nav-other-item">GAMES</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/clients.html" class="nav-link"><span
+                                class="nav-other-item">CLIENTS</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/contact.html" class="nav-link"><span
+                                class="nav-other-item">CONTACT</span></a>
+                        </li>
+
+                        
+                        
+                    </ul>
+                </div>
             </div>
-            <div class="container-header-nav">
-                <nav class="nav-header">
-                    <a href="./pages/about.html" class="link-without-underline"><span
-                            class="nav-other-item">ABOUT</span></a>
-                    <a href="./pages/games.html" class="link-without-underline"><span
-                            class="nav-other-item">GAMES</span></a>
-                    <a href="./pages/clients.html" class="link-without-underline"><span
-                            class="nav-other-item">CLIENTS</span></a>
-                    <a href="./pages/contact.html" class="link-without-underline"><span
-                            class="nav-other-item">CONTACT</span></a>
-                </nav>
-            </div>
-        </div>
+        </nav>
+
     </header>
     <main>
         <div class="section">
@@ -52,9 +72,11 @@
                 excitement within the gaming industry. With a commitment to pushing boundaries and delivering
                 unparalleled experiences, our team of passionate developers, artists, and visionaries collaborates
                 seamlessly to forge groundbreaking video games.</p>
-            <a href="#">
-                <h3 class="button">See more</h3>
-            </a>
+            <div class="container-btn-more-info">
+                <a href="./pages/about.html">
+                    <h3 class="btn-more-info">See more</h3>
+                </a>
+            </div>
         </div>
         <div class="section-info">
             <h2>Our Team</h2>
@@ -67,9 +89,11 @@
                 challenges seamlessly and accomplish more than the sum of individual efforts. Ultimately, the power of
                 teamwork lies in its ability to transform challenges into opportunities and to achieve collective
                 success.</p>
-            <a href="#">
-                <h3 class="button">More info</h3>
-            </a>
+            <div class="container-btn-more-info">
+                <a href="./pages/about.html">
+                    <h3 class="btn-more-info">More info</h3>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
@@ -97,6 +121,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 
