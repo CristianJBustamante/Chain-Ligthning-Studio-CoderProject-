@@ -1,0 +1,358 @@
+// Variables
+
+$mainFont:'Roboto', sans-serif;
+
+$mainColor: rgb(241, 157, 0);
+$white1: rgb(220, 220, 220);
+$white2: rgb(242, 242, 242);
+$black: rgb(12, 12, 12);
+$grey: rgb(118, 118, 118);
+$darkGrey: rgb(70, 70, 70);
+$red: rgb(255, 77, 0);
+
+$w50: 50%;
+$w100: 100%;
+
+// Mixins
+
+@mixin flex($direction, $justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+// Map
+
+$network:(
+    'facebook': rgb(24, 119, 242),
+    'twitter': rgb(29, 161, 242),
+    'instagram': rgb(212, 48, 137),
+    'linkedin': rgb(0, 115, 177),
+    'youtube': rgb(240, 0, 0)
+);
+
+
+
+
+body {
+    margin: 0px;
+    background-color: $white1;
+}
+
+.container-header {
+    @include flex(row, center, center);
+    padding: 0px 30px 10px;
+}
+
+.container-header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-header-nav {
+    width: 30%;
+    margin-left: 100px;
+    @include flex(column, center, center);
+}
+
+.nav-header{
+    width: $w100;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav-item:hover{
+
+    transform: scale(1.2);
+
+    .nav-other-item{
+        color: $red;
+    }
+
+    .nav-main-item{
+        color: $red;
+    }
+}
+
+
+.nav-main-item {
+    color: $mainColor;
+    font-size: 18px;
+}
+
+
+.nav-other-item {
+    color: $white2;
+    font-size: 18px;
+    &:hover{
+        color: $red;
+    }
+}
+
+
+.txt-logo{
+    font-size: 24px;
+    padding-right: 50px;
+}
+
+.nav-studio {
+    color: $black;
+    font-size: 24px;
+}
+
+.link-without-underline {
+    text-decoration: none;
+}
+
+
+
+.img-bg {
+    width: $w100;
+    height: 600px;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.section {
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    background-image: url('../images/backgrounds/main-background.jpg');
+    background-size: cover;
+    background-size: 1920 400px;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-title {
+    padding-top: 10%;
+    text-align: center;
+    color: $white2;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 15%;
+    min-height: 200px;
+    border-bottom: 2px solid $black;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
+.footer {
+    @include flex(row, center, center);
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient($darkGrey,$grey);;
+    padding: 0px 20px 10px 20px;
+
+    div p {
+        color: $white2;
+    }
+
+    .icons{ 
+        @include flex(row, space-between, center);
+        
+    }
+
+    div div a{
+        width: 100%;
+        height: 100%;
+        padding: 2px 5px;
+        margin: 2px;
+        border-radius: 20px;
+
+        &.fa-color-f{ background-color: map-get($map: $network, $key: 'facebook');}
+        &.fa-color-i{ background-color:  map-get($map: $network, $key: 'instagram');}
+        &.fa-color-t{ background-color:  map-get($map: $network, $key: 'twitter');}
+        &.fa-color-y{ background-color:  map-get($map: $network, $key: 'youtube');}
+        &.fa-color-l{ background-color:  map-get($map: $network, $key: 'linkedin');}
+
+        .fa{
+            width: 15px;
+        }
+    }
+
+    div a i{
+        color: $white2;
+        font-size: 20px;
+        margin: 1px;
+    }
+}
+
+.bg-dark {
+    background-color: $black;
+}
+
+.bg-grey {
+    background-color: $grey;
+}
+
+.bg-dark-gradient {
+    background: linear-gradient($darkGrey,$black);
+}
+
+.txt-white {
+    color: $white2;
+}
+
+.img-logo {
+    background-color: $mainColor;
+    margin: 10px 10px 0px 10px;
+}
+
+
+.title-page{
+    font-size: 120px;
+    color: transparent;
+    background: linear-gradient(126deg, rgba(255,0,0,1) 0%, rgba(202,255,0,1) 100%);
+    background-size: 200% 100%; 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    animation: cambiaColores 5s infinite;
+    -webkit-text-stroke: 3px $black; 
+    text-stroke: 5px $black;
+
+}
+
+@keyframes cambiaColores {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+span{ font-family: $mainFont;}
+h1{ font-family: $mainFont;}
+h2{ font-family: $mainFont; font-size: 30px;}
+h3{ font-family: $mainFont; font-size: 20px; background-color: $black; color: $white2; margin: 0;}
+p{ font-family: $mainFont;}
+
+.w100-img{
+    width: $w100;
+}
+
+/* Boostrap modifications */
+
+.fa-bars{
+    color: $white1;
+}
+
+div ul li{
+    @include flex(column, center, center);
+}
+
+.container-btn-more-info{
+    align-items: end;
+}
+
+.btn-more-info{
+    color: $white1;
+    margin-bottom: 0;
+    padding: 0 1rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/* Css Grid */
+
+
+@media (width > 768px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+}
+
+@media (500px < width < 768px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ch-one ch-two" "ch-three ch-three";
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    #ch-one{
+        grid-area: ch-one;
+    }
+
+    #ch-two{
+        grid-area: ch-two;
+    }
+
+    #ch-three{
+        grid-area: ch-three;
+    }
+}
+
+
+@media (width < 500px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+}
+
+@media (width < 800px) {
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+
+    .contact-info{
+        padding-top: 20px;
+        width: 90%;
+        align-items: center;
+    }
+    
+}
+
+
+// Network Colors
+// .fa-facebook{ background-color: map-get($map: $network, $key: 'facebook');}
+// .fa-instagram{ background-color:  map-get($map: $network, $key: 'instagram');}
+// .fa-twitter{ background-color:  map-get($map: $network, $key: 'twitter');}
+// .fa-youtube{ background-color:  map-get($map: $network, $key: 'youtube');}
+// .fa-linkedin{ background-color:  map-get($map: $network, $key: 'linkedin');}
+
