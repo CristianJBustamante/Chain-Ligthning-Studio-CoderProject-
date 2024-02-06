@@ -86,11 +86,21 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.section-title {
+.section .section-title {
   padding-top: 10%;
   text-align: center;
   color: rgb(242, 242, 242);
+}
+.section .section-title .title-page {
+  font-size: 100px;
+  color: transparent;
+  background: linear-gradient(126deg, rgb(255, 0, 0) 0%, rgb(202, 255, 0) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: cambiaColores 5s infinite;
+  -webkit-text-stroke: 3px rgb(12, 12, 12);
+  text-stroke: 5px rgb(12, 12, 12);
 }
 
 .section-info {
@@ -177,18 +187,6 @@ body {
   margin: 10px 10px 0px 10px;
 }
 
-.title-page {
-  font-size: 120px;
-  color: transparent;
-  background: linear-gradient(126deg, rgb(255, 0, 0) 0%, rgb(202, 255, 0) 100%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: cambiaColores 5s infinite;
-  -webkit-text-stroke: 3px rgb(12, 12, 12);
-  text-stroke: 5px rgb(12, 12, 12);
-}
-
 @keyframes cambiaColores {
   0% {
     background-position: 0% 50%;
@@ -252,7 +250,31 @@ div ul li {
   border-radius: 10px 10px 0px 0px;
 }
 
-/* Css Grid */
+.section-about-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  margin: 50px 5%;
+  min-height: 200px;
+  background-color: rgb(220, 220, 220);
+}
+
+.section-about-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 200px;
+}
+
+.about-info-column {
+  margin: 0px 10px;
+}
+
 @media (width > 768px) {
   #section-about-info {
     display: grid;
@@ -299,44 +321,6 @@ div ul li {
     align-items: start;
   }
 }
-@media (width < 800px) {
-  .contact-container {
-    flex-direction: column;
-  }
-  .contact-form {
-    width: 90%;
-  }
-  .contact-info {
-    padding-top: 20px;
-    width: 90%;
-    align-items: center;
-  }
-}
-.section-about-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 40px;
-  margin: 50px 5%;
-  min-height: 200px;
-  background-color: rgb(220, 220, 220);
-}
-
-.section-about-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 200px;
-}
-
-.about-info-column {
-  margin: 0px 10px;
-}
-
 .our-games-title {
   font-size: 40px;
 }
@@ -482,6 +466,20 @@ div ul li {
 .contact-info-items p {
   font-size: 30px;
   color: rgb(70, 70, 70);
+}
+
+@media (width < 800px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .contact-info {
+    padding-top: 20px;
+    width: 90%;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

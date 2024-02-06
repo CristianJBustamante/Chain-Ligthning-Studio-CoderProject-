@@ -19,3 +19,59 @@
 .about-info-column{
     margin: 0px 10px;
 }
+
+@media (width > 768px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+}
+
+@media (500px < width < 768px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ch-one ch-two" "ch-three ch-three";
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    #ch-one{
+        grid-area: ch-one;
+    }
+
+    #ch-two{
+        grid-area: ch-two;
+    }
+
+    #ch-three{
+        grid-area: ch-three;
+    }
+}
+
+
+@media (width < 500px) {
+    #section-about-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+
+    #our-games-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+}

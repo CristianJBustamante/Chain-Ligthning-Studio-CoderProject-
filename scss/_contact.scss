@@ -76,3 +76,21 @@
         color: $darkGrey;
     }
 }
+
+@media (width < 800px) {
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+
+    .contact-info{
+        padding-top: 20px;
+        width: 90%;
+        align-items: center;
+    }
+    
+}

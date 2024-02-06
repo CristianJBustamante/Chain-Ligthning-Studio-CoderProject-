@@ -126,14 +126,29 @@ body {
     background-position: center;
     align-items: center;
     justify-content: center;
+    
+    .section-title {
+        padding-top: 10%;
+        text-align: center;
+        color: $white2;
+        
+        .title-page{
+            font-size: 100px;
+            color: transparent;
+            background: linear-gradient(126deg, rgba(255,0,0,1) 0%, rgba(202,255,0,1) 100%);
+            background-size: 200% 100%; 
+            -webkit-background-clip: text; 
+            color: transparent; 
+            animation: cambiaColores 5s infinite;
+            -webkit-text-stroke: 3px $black; 
+            text-stroke: 5px $black;
+        
+        }
+    }
+    
 }
 
 
-.section-title {
-    padding-top: 10%;
-    text-align: center;
-    color: $white2;
-}
 
 .section-info {
     display: flex;
@@ -214,18 +229,6 @@ body {
 }
 
 
-.title-page{
-    font-size: 120px;
-    color: transparent;
-    background: linear-gradient(126deg, rgba(255,0,0,1) 0%, rgba(202,255,0,1) 100%);
-    background-size: 200% 100%; 
-    -webkit-background-clip: text; 
-    color: transparent; 
-    animation: cambiaColores 5s infinite;
-    -webkit-text-stroke: 3px $black; 
-    text-stroke: 5px $black;
-
-}
 
 @keyframes cambiaColores {
     0% {
@@ -270,89 +273,4 @@ div ul li{
     border-radius: 10px 10px 0px 0px;
 }
 
-
-/* Css Grid */
-
-
-@media (width > 768px) {
-    #section-about-info{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: start;
-    }
-
-    #our-games-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: start;
-    }
-}
-
-@media (500px < width < 768px) {
-    #section-about-info{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "ch-one ch-two" "ch-three ch-three";
-        align-items: start;
-    }
-
-    #our-games-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: start;
-    }
-
-    #ch-one{
-        grid-area: ch-one;
-    }
-
-    #ch-two{
-        grid-area: ch-two;
-    }
-
-    #ch-three{
-        grid-area: ch-three;
-    }
-}
-
-
-@media (width < 500px) {
-    #section-about-info{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: start;
-    }
-
-    #our-games-grid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: start;
-    }
-}
-
-@media (width < 800px) {
-
-    .contact-container{
-        flex-direction: column;
-    }
-
-    .contact-form{
-        width: 90%;
-    }
-
-    .contact-info{
-        padding-top: 20px;
-        width: 90%;
-        align-items: center;
-    }
-    
-}
-
-
-// Network Colors
-// .fa-facebook{ background-color: map-get($map: $network, $key: 'facebook');}
-// .fa-instagram{ background-color:  map-get($map: $network, $key: 'instagram');}
-// .fa-twitter{ background-color:  map-get($map: $network, $key: 'twitter');}
-// .fa-youtube{ background-color:  map-get($map: $network, $key: 'youtube');}
-// .fa-linkedin{ background-color:  map-get($map: $network, $key: 'linkedin');}
 
