@@ -1,5 +1,5 @@
 # 🌩⚡ ⚡ ChainLightning ⚡⚡⚡
-## _Estudio de desarrollo de Videojuegos_
+## _Estudio de desarrollo de Videojuegos_ 🎮
 
 ChainLightning es un proyecto a futuro, la creación de un estudio de desarrollo de videojuegos, una de mis pasiones en conjuto con la programación. Y por que no utilizar este curso como puntapie para comenzar a hacer nada mas y nada menos que el maquetado del sitio web, para darse a conocer frente a los posibles publishers y clientes.
 
@@ -40,3 +40,10 @@ Si bien ha sido un proceso largo la construción de cada una de las pantallas qu
 - [Página Nuestros Videojuegos](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/games.html)
 - [Página Clientes](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/clients.html)
 - [Página Contacto](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/contact.html)
+
+## Despliegue 🖥
+
+Por último este sitio fue subido a un servicio de hosting para poner el mismo Online. 
+A continuación el link del sitio:
+
+- [ChainLigtning Studio](https://chainligthning.netlify.app/)
