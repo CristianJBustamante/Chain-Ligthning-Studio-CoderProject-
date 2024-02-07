@@ -11,23 +11,32 @@ ChainLightning es un proyecto a futuro, la creación de un estudio de desarrollo
 - SASS
 
 ## Prototipado 📝
+
+Antes de encabezar cualquier maquetado del sitio web, se procedió a la realización de varios prototipos que ilustraran de ciertamanera la idea de la disposición del contenido en cada una de las páginas. A continuación se muestran los prototipos de las diferentes pantallas que conformarían el sitio web.
+
 - Página Principal
-![Texto alternativo](./images/Wireframes/Home%20-%20Desktop.png)
+
+![Wireframe - Home](./images/Wireframes/Home%20-%20Desktop.png)
 - Página Sobre Nosotros
-![Texto alternativo](./images/Wireframes/About%20-%20Desktop.png)
+
+![Wireframe - About](./images/Wireframes/About%20-%20Desktop.png)
 - Página Nuestros Videojuegos
-![Texto alternativo](./images/Wireframes/Games%20-%20Desktop.png)
+
+![Wireframe - Games](./images/Wireframes/Games%20-%20Desktop.png)
 - Página Clientes
-![Texto alternativo](./images/Wireframes/Clients%20-%20Desktop.png)
+
+![Wireframe - Clients](./images/Wireframes/Clients%20-%20Desktop.png)
 - Página Contacto
-![Texto alternativo](./images/Wireframes/Contact%20-%20Desktop.png)
+
+![Wireframe - Contact](./images/Wireframes/Contact%20-%20Desktop.png)
 
 
 ## Web final 💻
 
-- [Texto del enlace](URL_del_enlace)
-- [Página Principal](./index.html)
-- [Página Sobre Nosotros](./pages/about.html)
-- [Página Nuestros Videojuegos](./pages/games.html)
-- [Página Clientes](./pages/clients.html)
-- [Página Contacto](./pages/contact.html)
+Si bien ha sido un proceso largo la construción de cada una de las pantallas que conforma el sitio web, el resultado no se ha obtenido de primeras, sino que han habido varios cambios tanto a nivel estructural y de aplicación de tecnologías como de diseño. A continuación se listan las diferentes páginas finales del sitio web.
+
+- [Página Principal](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/index.html)
+- [Página Sobre Nosotros](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/about.html)
+- [Página Nuestros Videojuegos](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/games.html)
+- [Página Clientes](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/clients.html)
+- [Página Contacto](https://cristianjbustamante.github.io/Chain-Ligthning-Studio-CoderProject-/pages/contact.html)
