@@ -7,90 +7,96 @@
     @include flex(row, center, center);
     justify-content: center;
     align-items: center;
-}
 
-.contact-form{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
+    .contact-info{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 60px;
+        padding-left: 60px;
+        
+            .contact-info-items{
+                @include flex(row, center, center);
+                justify-content: center;
+                align-items: center;
+            
+                i{
+                    font-size: 35px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    color: $darkGrey;
+                }
+            
+                p{
+                    font-size: 30px;
+                    color: $darkGrey;
+                }
+            }
+    }
 
-.contact-form input{
-    margin: 5px;
-    width: 95%;
-    height: 40px;
-    background-color: $darkGrey;
-    color: $white1;
-    font-size: 20px;
-
-    &::placeholder{
-        color: $grey;
-        font-size: 20px;
+    .contact-form{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    
+        input{
+            margin: 5px;
+            width: 95%;
+            height: 40px;
+            background-color: $darkGrey;
+            color: $white1;
+            font-size: 20px;
+        
+            &::placeholder{
+                color: $grey;
+                font-size: 20px;
+            }
+        }
+    
+        .submit{
+            width: 200px;
+            background-color: $mainColor;
+        }
+    
+        textarea{
+            margin: 5px;
+            width: 95%;
+            background-color: $darkGrey;
+            color: $white1;
+            font-size: 20px;
+            resize: none;
+        
+            &::placeholder{
+                color: $grey;
+                font-size: 20px;
+            }
+        }
     }
 }
 
-.contact-form .submit{
-    width: 200px;
-    background-color: $mainColor;
-}
 
-.contact-form textarea{
-    margin: 5px;
-    width: 95%;
-    background-color: $darkGrey;
-    color: $white1;
-    font-size: 20px;
-    resize: none;
 
-    &::placeholder{
-        color: $grey;
-        font-size: 20px;
-    }
-}
-
-.contact-info{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-bottom: 60px;
-}
-
-.contact-info-items{
-    @include flex(row, center, center);
-    justify-content: center;
-    align-items: center;
-
-    i{
-        font-size: 35px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        color: $darkGrey;
-    }
-
-    p{
-        font-size: 30px;
-        color: $darkGrey;
-    }
-}
 
 @media (width < 800px) {
 
     .contact-container{
         flex-direction: column;
+        
+        .contact-form{
+            width: 90%;
+        }
+    
+        .contact-info{
+            padding-top: 20px;
+            width: 90%;
+            align-items: center;
+            padding-left: 0;
+        }
     }
 
-    .contact-form{
-        width: 90%;
-    }
-
-    .contact-info{
-        padding-top: 20px;
-        width: 90%;
-        align-items: center;
-    }
     
 }

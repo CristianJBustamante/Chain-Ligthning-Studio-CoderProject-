@@ -9,16 +9,11 @@
     background-color: $white1;
 }
 
-.section-about-info{
-    @include flex(row, center, center);
-    align-items: center;
-    justify-content: space-between;
-    margin: 50px 200px;
-}
-
 .about-info-column{
     margin: 0px 10px;
 }
+
+
 
 @media (width > 768px) {
     #section-about-info{

@@ -261,16 +261,6 @@ div ul li {
   background-color: rgb(220, 220, 220);
 }
 
-.section-about-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 200px;
-}
-
 .about-info-column {
   margin: 0px 10px;
 }
@@ -321,16 +311,15 @@ div ul li {
     align-items: start;
   }
 }
-.our-games-title {
-  font-size: 40px;
-}
-
 .our-games {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(220, 220, 220);
+}
+.our-games .our-games-title {
+  font-size: 40px;
 }
 
 .our-games-sections {
@@ -343,15 +332,6 @@ div ul li {
   margin: 50px 50px;
 }
 
-.section-games {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-}
-
 .games-item {
   display: flex;
   flex-direction: column;
@@ -359,8 +339,7 @@ div ul li {
   align-items: center;
   margin: 10px 20px;
 }
-
-.games-title {
+.games-item .games-title {
   margin-top: 10px;
   font-size: 30px;
   justify-content: center;
@@ -378,7 +357,6 @@ div ul li {
   justify-content: center;
   margin: 20px;
 }
-
 .container-logos img {
   object-fit: cover;
   width: 100%;
@@ -400,56 +378,16 @@ div ul li {
   justify-content: center;
   align-items: center;
 }
-
-.contact-form {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-
-.contact-form input {
-  margin: 5px;
-  width: 95%;
-  height: 40px;
-  background-color: rgb(70, 70, 70);
-  color: rgb(220, 220, 220);
-  font-size: 20px;
-}
-.contact-form input::placeholder {
-  color: rgb(118, 118, 118);
-  font-size: 20px;
-}
-
-.contact-form .submit {
-  width: 200px;
-  background-color: rgb(241, 157, 0);
-}
-
-.contact-form textarea {
-  margin: 5px;
-  width: 95%;
-  background-color: rgb(70, 70, 70);
-  color: rgb(220, 220, 220);
-  font-size: 20px;
-  resize: none;
-}
-.contact-form textarea::placeholder {
-  color: rgb(118, 118, 118);
-  font-size: 20px;
-}
-
-.contact-info {
+.contact-container .contact-info {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   margin-bottom: 60px;
+  padding-left: 60px;
 }
-
-.contact-info-items {
+.contact-container .contact-info .contact-info-items {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -457,28 +395,64 @@ div ul li {
   justify-content: center;
   align-items: center;
 }
-.contact-info-items i {
+.contact-container .contact-info .contact-info-items i {
   font-size: 35px;
   margin-right: 10px;
   margin-bottom: 10px;
   color: rgb(70, 70, 70);
 }
-.contact-info-items p {
+.contact-container .contact-info .contact-info-items p {
   font-size: 30px;
   color: rgb(70, 70, 70);
+}
+.contact-container .contact-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.contact-container .contact-form input {
+  margin: 5px;
+  width: 95%;
+  height: 40px;
+  background-color: rgb(70, 70, 70);
+  color: rgb(220, 220, 220);
+  font-size: 20px;
+}
+.contact-container .contact-form input::placeholder {
+  color: rgb(118, 118, 118);
+  font-size: 20px;
+}
+.contact-container .contact-form .submit {
+  width: 200px;
+  background-color: rgb(241, 157, 0);
+}
+.contact-container .contact-form textarea {
+  margin: 5px;
+  width: 95%;
+  background-color: rgb(70, 70, 70);
+  color: rgb(220, 220, 220);
+  font-size: 20px;
+  resize: none;
+}
+.contact-container .contact-form textarea::placeholder {
+  color: rgb(118, 118, 118);
+  font-size: 20px;
 }
 
 @media (width < 800px) {
   .contact-container {
     flex-direction: column;
   }
-  .contact-form {
+  .contact-container .contact-form {
     width: 90%;
   }
-  .contact-info {
+  .contact-container .contact-info {
     padding-top: 20px;
     width: 90%;
     align-items: center;
+    padding-left: 0;
   }
 }
 
